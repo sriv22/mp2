@@ -1,0 +1,101 @@
+.header {
+    width:60%;
+    height: 100%;
+    height: 400px;
+    display:table;
+    background-color: gainsboro;
+    @include background-size(cover);
+    align-content: center;
+    margin: 0 auto;
+    
+}
+
+.search-options {
+    align-content: center;
+}
+
+// Design for the title of overlaying the header (emphasis added to make words pop out)
+h1 {
+    font-size: 300px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+    text-shadow:0 1px 2px rgba(0,0,0,0.3);
+}
+
+.header #headerTitle {
+    color: indianred;
+    text-align: center;
+}
+
+.result:hover {
+    background-color: darkgray;
+    transform: scale(1.1)
+}
+
+
+.details {
+    width:80%;
+    height: 100%;
+    height: 400px;
+    display:table;
+    background-color: lightblue;
+    @include background-size(cover);
+    align-content: center;
+    margin: 0 auto;
+	display:table;
+}
+
+
+#info, #poster, #director{
+	display: table-cell;
+}
+
+#info {
+    color: indianred;
+    width: 60%;
+    padding-left: 20px;
+/*    margin-left: 20px;*/
+}
+
+#poster {
+    padding-top: 20px;   
+}
+
+
+.details .radius button {
+    align-content: middle;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.im, .det{
+	display: table-cell;
+}
+
+.gallery {
+    text-align: center;
+    background-color: lightgray;
+}
+
+
+
+
+/*
+.gallery ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.gallery .small-block-grid-8 li {
+    display: inline-grid;
+    margin: 10px;
+    width: 250px;
+}
+
+.gallery #stretch {
+    display: inline-block;
+    width: 100%;
+}*/
