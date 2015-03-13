@@ -1,0 +1,61 @@
+
+
+
+<div class="gallery">
+    <div class="nav-options">
+        <h1> IMDb Top Movies Gallery</h1>
+                <a class="radius button" href="imdb250.html#/list">Search Gallery</a>
+        
+        <h5> Filter via genres!</h5>
+        <select ng-model="orderProp" class="medium" id="genre_dropdown">
+            <option value="All">All</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Action">Action </option>
+            <option value="Thriller">Thriller </option>
+            <option value="Biography">Biography </option>
+            <option value="History">History </option>
+            <option value="Western">Western </option>
+            <option value="Adventure">Adventure </option>
+            <option value="Fantasy">Fantasy </option>
+            <option value="Romance">Romance </option>
+            <option value="Mystery">Mystery </option>
+            <option value="Sci-Fi">Sci-Fi </option>
+            <option value="Family">Family </option>
+            <option value="Comedy">Comedy </option>
+            <option value="War">War </option>
+            <option value="Animation">Animation </option>
+            <option value="Horror">Horror </option>
+            <option value="Music">Music </option>
+            <option value="Film-Noir">Film-Noir </option>
+            <option value="Musical">Musical </option>
+            <option value="Sport">Sport </option>
+        </select>
+    </div>
+    
+<!--
+    <select ng-model="orderProp">
+        <option ng-repeat="genre in genres" value="+title">{{genre}}</option>
+    </select>
+-->
+    
+<!--
+    <a href="#" class="button" data-dropdown="drop">Link Dropdown &raquo;</a>
+<ul id="drop" class="[tiny small medium large content]f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+-->
+    <div class="row">
+        <center>
+            <ul class="small-block-grid-3" id="movie_gallery">
+                <li ng-repeat="movie in movies" class="{{movie.genres}}">
+                        <a href="imdb250.html#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a>
+                </li>
+            </ul>
+        </center>
+    </div>    
+        
+    
+</div>

@@ -1,0 +1,34 @@
+<div class="header">
+  <h1 id="headerTitle">IMDb Movie Directory</h1>
+    <div class="movie-search">
+                <div class="search-options">
+                    <input class="search-bar" type="text" ng-model="search" placeholder="Let the search begin..." />
+                    <a ng-click="sort='title'"class="radius button">Title</a>
+                    <a ng-click="sort='rank'"class="radius button">Rank</a>
+                    <a href="#/gallery"class="radius button"> Gallery </a>
+                    <input ng-model="reverse" ng-value="false" type="radio" />ascending
+                    <input ng-model="reverse" ng-value="true" type="radio" />descending
+
+                    
+                </div> 
+    </div>
+    
+    <div class="results" ng-hide="!search">
+            <ul>
+                <li ng-repeat="movie in movies | filter:search | orderBy:sort:reverse">
+                    <a href="imdb250.html#/details/{{movie.rank}}">
+                    <div class="result">
+                        <div style="width:280px;"><img align="middle" style="height:100%; width:100%"src="data/images/{{movie.id}}.jpg"></div>
+                        <div><h3>{{movie.title}}</h3>
+                            <span> Rank - {{movie.rank}} </span>
+                        </div>
+                    </div>
+                    </a>
+                    <hr>
+                </li>
+            </ul>
+    </div>
+</div>
+
+
+

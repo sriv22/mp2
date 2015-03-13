@@ -1,0 +1,21 @@
+<div class="details"> 
+    
+    <span id="info">
+        <h1>{{movie.title}}</h1>
+        <h2> Rank -  {{movie.rank}}</h2>
+        <h5> {{movie.plot}} </h5>
+        
+    </span>
+    
+    <span id="poster"> <img align="middle" src="data/images/{{movie.imdbID}}.jpg"</span>    
+    
+    <span id="director"> Director - {{movie.director[0]}} </span>
+        
+    <span id="buttons">
+        <a class="radius button" href="#/details/{{movie.rank-1}}">Prev</a>
+        <a class="radius button" href="#/details/{{movie.rank+1}}">Next</a>
+        <a href="#/gallery"class="radius button"> Gallery </a>
+    </span>
+    
+    
+</div>

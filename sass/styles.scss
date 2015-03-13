@@ -4,3 +4,351 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+// Navigation Bar CSS : uses image as a background
+.header {
+    width:100%;
+    height: 100%;
+    height:980px;
+    display:table;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //z-index: 1;
+    background-attachment: fixed;
+    background-image: url("../data/images/jaipur1.jpg") !important;
+    @include background-size(cover);
+}
+
+// Design for the title of overlaying the header (emphasis added to make words pop out)
+.header #headerTitle {
+    font-size: 450%;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+    text-shadow:0 1px 2px rgba(0,0,0,0.3);
+}
+
+// Design for the three sections - intro, purpose and pitch
+#intro {
+    background-color: #ba8b85;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    height: 1000px;
+    width: 100%;
+}
+
+#purpose {
+    background-color: #f1b6a8;
+    padding: 300px;
+    text-align: center;
+    align-content: center;
+    //height: 850px;
+    //width: 100%;
+    //height: 85px;
+    background-image: url("../data/images/man.jpg") !important;
+    background-repeat: no-repeat;
+    @include background-size(cover);
+    height: 100%;
+    height:980px;
+}
+
+#pitch {
+    background-color: #feddcc;
+    text-align: center;
+    padding: 100px;
+    width: 100%;
+    height: 550px;
+}
+
+// Design for the text
+.text {
+    padding-top: 800px;
+    font-size: 100%;
+    color: black;
+    font-family: 'Gill Sans', 'sans-serif';
+}
+
+
+// Design for the text
+.title {
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 500px;
+    padding-top: 5000px;
+}
+
+#owl-demo .item1{
+  background: #ba8b85;
+  //padding: 30px 0px;
+  margin: 10px;
+  color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("../data/images/pic15.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#owl-demo .item2{
+  background: #ba8b85;
+  //padding: 30px 0px;
+  margin: 10px;
+  color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("../data/images/pic1.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#owl-demo .item3{
+  background: #ba8b85;
+  //padding: 30px 0px;
+  margin: 10px;
+  color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("../data/images/pic2.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#owl-demo .item4{
+  background: #ba8b85;
+  //padding: 30px 0px;
+  margin: 10px;
+  color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("../data/images/pic3.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#owl-demo .item5{
+  background: #ba8b85;
+  //padding: 30px 0px;
+  margin: 10px;
+  color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("../data/images/pic4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;    
+}
+.customNavigation {
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// Modal Edits
+#pitch .modalButton {
+    margin-top: 50px;
+    background-color: gray;
+    color: white;   
+}
+
+#pitch .modalButton:hover {
+    color: white;
+    background-color: lightgray;
+}
+
+// Footer information
+// Design for the footer
+#footer {
+    background-color: black;
+    color: black;
+    clear: both;
+    text-align:center;
+    padding:5px;
+    height: 550px;
+    width: 100%;
+}
+
+// Design for the columns
+#contentBox {
+    text-align: center;
+    height: 350px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+// Typicons - vector social network symbol usage 
+@font-face {
+    font-family: 'typicons';
+    src: url("lib/typicons/src/font/typicons.eot");
+    src: url("lib/typicons/src/font/typicons.eot?#iefix") format('embedded-opentype'),
+        url("lib/typicons/src/font/typicons.woff") format('woff'),
+        url("lib/typicons/src/font/typicons.ttf") format('truetype'),
+        url("lib/typicons/src/font/typicons.svg#typicons") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.footerCaption {
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    vertical-align: middle;
+    color: white;
+}
+.footerCaption:hover {
+    color: gray;
+    background-color: black ;
+}
+
+// Vector social network icon design
+.typcn-social-facebook, .typcn-social-facebook:visited {
+    font-size: 75px;
+    text-decoration: none;
+    color: white;
+}
+.typcn-social-facebook:hover {
+    color: gray;
+    background-color: black ;
+}
+.typcn-social-twitter, .typcn-social-twitter:visited {
+    font-size: 75px;
+    text-decoration: none;
+    color: white;
+}
+.typcn-social-twitter:hover {
+    color: gray;
+    background-color: black ;
+}
+.typcn-social-google-plus, .typcn-social-google-plus:visited {
+    font-size: 75px;
+    text-decoration: none;
+    color: white;
+}
+.typcn-social-google-plus:hover {
+    color: gray;
+    background-color: black ;
+}
+.typcn-social-instagram, .typcn-social-instagram:visited {
+    font-size: 75px;
+    text-decoration: none;
+    color: white;
+}
+.typcn-social-instagram:hover {
+    color: gray;
+    background-color: black ;
+}
+.typcn-social-tumbler, .typcn-social-tumbler:visited {
+    font-size: 75px;
+    text-decoration: none;
+    color: white;
+}
+.typcn-social-tumbler:hover {
+    color: gray;
+    background-color: black ;
+}
+.typcn-social-pinterest, .typcn-social-pinterest:visited {
+    font-size: 75px;
+    text-decoration: none;
+    color: white;
+}
+.typcn-social-pinterest:hover {
+    color: gray;
+    background-color: black ;
+}
+
+// Progress Indicator
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+progress {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: .25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: #e45c28 ;
+    z-index: 99999999999999999;
+}
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+.flat::-webkit-progress-value {
+  background-color: #e45c28 ;
+}
+.flat::-moz-progress-bar {
+  background-color: #e45c28 ;
+}
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #e45c28 );
+}
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #e45c28 );
+}
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -webkit-linear-gradient(left, green, #e45c28 );
+}
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -moz-linear-gradient(left, green, #e45c28 );
+}
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+.progress-bar {
+  background-color: #e45c28 ;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+
